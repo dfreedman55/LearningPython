@@ -10,6 +10,6 @@ first_octet = int(input_ip[0])
 first_binary = bin(first_octet)
 first_hex = hex(first_octet)
 print '.'.join(input_ip)
-print '%s %25s %25s' % ('NETWORK_NUMBER', 'FIRST_OCTET_BINARY', 'FIRST_OCTET_HEX')
-print '%s %25s %25s' % ('.'.join(input_ip), first_binary, first_hex)
+print '%-20s %-20s %-20s' % ('NETWORK_NUMBER', 'FIRST_OCTET_BINARY', 'FIRST_OCTET_HEX')
+print '%-20s %-20s %-20s' % ('.'.join(input_ip), first_binary, first_hex)
 
