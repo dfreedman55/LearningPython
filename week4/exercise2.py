@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+
+def main():
+	show_version = '''
+Cisco IOS Software, C880 Software (C880DATA-UNIVERSALK9-M), Version 15.0(1)M4, RELEASE SOFTWARE (fc1)
+Technical Support:
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Fri 29-Oct-10 00:02 by prod_rel_team
+ROM: System Bootstrap, Version 12.4(22r)YB5, RELEASE SOFTWARE (fc1)
+
+twb-sf-881 uptime is 7 weeks, 5 days, 19 hours, 23 minutes
+System returned to ROM by reload at 15:33:36 PST Fri Feb 28 2014
+System restarted at 15:34:09 PST Fri Feb 28 2014
+System image file is "flash:c880data-universalk9-mz.150-1.M4.bin"
+Last reload type: Normal Reload
+Last reload reason: Reload Command
+
+Cisco 881 (MPC8300) processor (revision 1.0) with 236544K/25600K bytes of memory.
+Processor board ID FTX1000038X
+
+5 FastEthernet interfaces
+1 Virtual Private Network (VPN) Module
+256K bytes of non-volatile configuration memory.
+126000K bytes of ATA CompactFlash (Read/Write)
+
+License Info:
+License UDI:
+-------------------------------------------------
+Device#   PID                   SN
+-------------------------------------------------
+*0        CISCO881-SEC-K9       FTX1000038X
+
+License Information for 'c880-data'
+    License Level: advipservices   Type: Permanent
+    Next reboot license Level: advipservices
+
+Configuration register is 0x2102'''
+
+	startlist = show_version.strip().split('\n')
+	mydictionary = {}	
+	for item in startlist:
+		if 'Cisco IOS Software' in item:
+			vendor = item.split(' ')[0]
+			os_version = item.split(',')[2].split(' ')[-1]
+			mydictionary['vendor'] = vendor
+			mydictionary['os_version'] = os_version
+		if 'bytes of memory' in item:
+			model = item.split('(')[0].strip()
+			mydictionary['model'] = model
+		if 'Processor board ID' in item:
+			serial_number = item.split(' ')[-1]
+			mydictionary['serial_number'] = serial_number
+		if 'uptime is' in item:
+			uptime = item.split('uptime is')[-1].strip()
+			mydictionary['uptime'] = uptime
+
+	print mydictionary
+	for k,v in mydictionary.items():
+		print k, v
+
+if __name__ == '__main__':
+	main()
