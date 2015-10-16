@@ -102,7 +102,7 @@ Management address(es):
 '''
 
 r1_show_cdp_neighbors = '''
-R1>show cdp neighbors 
+R1>show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
@@ -110,16 +110,16 @@ SW1              Fas 1              150          S I      WS-C2950- Fas 0/11
 '''
 
 r1_show_cdp_neighbors_detail = '''
-R1>show cdp neighbors detail 
+R1>show cdp neighbors detail
 -------------------------
 Device ID: SW1
-Entry address(es): 
+Entry address(es):
   IP address: 10.1.1.22
-Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP 
+Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP
 Interface: FastEthernet1,  Port ID (outgoing port): FastEthernet0/11
 Holdtime : 145 sec
 Version :
-Cisco Internetwork Operating System Software 
+Cisco Internetwork Operating System Software
 IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8a, RELEASE SOFTWARE (fc1)
 Copyright (c) 1986-2006 by cisco Systems, Inc.
 Compiled Fri 28-Jul-06 15:16 by weiliu
@@ -131,7 +131,7 @@ Duplex: full
 '''
 
 r2_show_cdp_neighbors = '''
-R2>show cdp neighbors 
+R2>show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
@@ -139,16 +139,16 @@ SW1              Fas 1              150          S I      WS-C2950- Fas 0/12
 '''
 
 r2_show_cdp_neighbors_detail = '''
-R2>show cdp neighbors detail 
+R2>show cdp neighbors detail
 -------------------------
 Device ID: SW1
-Entry address(es): 
+Entry address(es):
   IP address: 10.1.1.22
-Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP 
+Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP
 Interface: FastEthernet1,  Port ID (outgoing port): FastEthernet0/12
 Holdtime : 145 sec
 Version :
-Cisco Internetwork Operating System Software 
+Cisco Internetwork Operating System Software
 IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8a, RELEASE SOFTWARE (fc1)
 Copyright (c) 1986-2006 by cisco Systems, Inc.
 Compiled Fri 28-Jul-06 15:16 by weiliu
@@ -160,7 +160,7 @@ Duplex: full
 '''
 
 r3_show_cdp_neighbors = '''
-R3>show cdp neighbors 
+R3>show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
@@ -168,16 +168,16 @@ SW1              Fas 1              150          S I      WS-C2950- Fas 0/13
 '''
 
 r3_show_cdp_neighbors_detail = '''
-R3>show cdp neighbors detail 
+R3>show cdp neighbors detail
 -------------------------
 Device ID: SW1
-Entry address(es): 
+Entry address(es):
   IP address: 10.1.1.22
-Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP 
+Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP
 Interface: FastEthernet1,  Port ID (outgoing port): FastEthernet0/13
 Holdtime : 145 sec
 Version :
-Cisco Internetwork Operating System Software 
+Cisco Internetwork Operating System Software
 IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8a, RELEASE SOFTWARE (fc1)
 Copyright (c) 1986-2006 by cisco Systems, Inc.
 Compiled Fri 28-Jul-06 15:16 by weiliu
@@ -189,7 +189,7 @@ Duplex: full
 '''
 
 r4_show_cdp_neighbors = '''
-R4>show cdp neighbors 
+R4>show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
@@ -197,16 +197,16 @@ SW1              Fas 1              150          S I      WS-C2950- Fas 0/14
 '''
 
 r4_show_cdp_neighbors_detail = '''
-R4>show cdp neighbors detail 
+R4>show cdp neighbors detail
 -------------------------
 Device ID: SW1
-Entry address(es): 
+Entry address(es):
   IP address: 10.1.1.22
-Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP 
+Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP
 Interface: FastEthernet1,  Port ID (outgoing port): FastEthernet0/14
 Holdtime : 145 sec
 Version :
-Cisco Internetwork Operating System Software 
+Cisco Internetwork Operating System Software
 IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8a, RELEASE SOFTWARE (fc1)
 Copyright (c) 1986-2006 by cisco Systems, Inc.
 Compiled Fri 28-Jul-06 15:16 by weiliu
@@ -218,7 +218,7 @@ Duplex: full
 '''
 
 r5_show_cdp_neighbors = '''
-R5>show cdp neighbors 
+R5>show cdp neighbors
 Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater
 Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
@@ -226,16 +226,16 @@ SW1              Fas 1              150          S I      WS-C2950- Fas 0/15
 '''
 
 r5_show_cdp_neighbors_detail = '''
-R5>show cdp neighbors detail 
+R5>show cdp neighbors detail
 -------------------------
 Device ID: SW1
-Entry address(es): 
+Entry address(es):
   IP address: 10.1.1.22
-Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP 
+Platform: cisco WS-C2950-24,  Capabilities: Switch IGMP
 Interface: FastEthernet1,  Port ID (outgoing port): FastEthernet0/15
 Holdtime : 145 sec
 Version :
-Cisco Internetwork Operating System Software 
+Cisco Internetwork Operating System Software
 IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8a, RELEASE SOFTWARE (fc1)
 Copyright (c) 1986-2006 by cisco Systems, Inc.
 Compiled Fri 28-Jul-06 15:16 by weiliu
@@ -249,51 +249,52 @@ Duplex: full
 import pprint
 network_devices = {}
 
+
 def main():
-	parsecdp(sw1_show_cdp_neighbors_detail)
-	parsecdp(r1_show_cdp_neighbors_detail)
-	parsecdp(r2_show_cdp_neighbors_detail)
-	parsecdp(r3_show_cdp_neighbors_detail)
-	parsecdp(r4_show_cdp_neighbors_detail)
-	parsecdp(r5_show_cdp_neighbors_detail)
-	pprint.pprint(network_devices)
-#	print network_devices['R1']['ip']
-#	print network_devices['R2']['ip']
-#	print network_devices['R3']['ip']
-#	print network_devices['R4']['ip']
-#	print network_devices['R5']['ip']
-#	print network_devices['SW1']['ip']
+    parsecdp(sw1_show_cdp_neighbors_detail)
+    parsecdp(r1_show_cdp_neighbors_detail)
+    parsecdp(r2_show_cdp_neighbors_detail)
+    parsecdp(r3_show_cdp_neighbors_detail)
+    parsecdp(r4_show_cdp_neighbors_detail)
+    parsecdp(r5_show_cdp_neighbors_detail)
+    pprint.pprint(network_devices)
+# print network_devices['R1']['ip']
+# print network_devices['R2']['ip']
+# print network_devices['R3']['ip']
+# print network_devices['R4']['ip']
+# print network_devices['R5']['ip']
+# print network_devices['SW1']['ip']
+
 
 def parsecdp(cdpdata):
-	startlist = cdpdata.split('-------------------------')
-	i = 1
-	while i < len(startlist):
-		innerdict = {}
-		templist = startlist[i].split('\n')
-		for item in templist:
-			if 'Device ID:' in item:
-				hostname = item.split(':')[-1].strip()
-			if 'IP address:' in item:
-				ip = item.split(':')[-1].strip()
-			if 'Platform:' in item:
-				model = item.split(',')[0].split(' ')[-1]
-				vendor = item.split(',')[0].split(' ')[-2]
-				if ('Router' in item) and ('Switch' in item):
-					device_type = 'Router'
-				elif ('Router' not in item) and ('Switch' in item):
-					device_type = 'Switch'
-				else:
-					device_type = 'Unknown'
-		if hostname in network_devices.keys():
-			pass
-		else:
-			innerdict['ip'] = ip
-			innerdict['model'] = model
-			innerdict['vendor'] = vendor
-			innerdict['device_type'] = device_type
-			network_devices[hostname] = innerdict
-		i += 1
+    startlist = cdpdata.split('-------------------------')
+    i = 1
+    while i < len(startlist):
+        innerdict = {}
+        templist = startlist[i].split('\n')
+        for item in templist:
+            if 'Device ID:' in item:
+                hostname = item.split(':')[-1].strip()
+            if 'IP address:' in item:
+                ip = item.split(':')[-1].strip()
+            if 'Platform:' in item:
+                model = item.split(',')[0].split(' ')[-1]
+                vendor = item.split(',')[0].split(' ')[-2]
+                if ('Router' in item) and ('Switch' in item):
+                    device_type = 'Router'
+                elif ('Router' not in item) and ('Switch' in item):
+                    device_type = 'Switch'
+                else:
+                    device_type = 'Unknown'
+        if hostname in network_devices.keys():
+            pass
+        else:
+            innerdict['ip'] = ip
+            innerdict['model'] = model
+            innerdict['vendor'] = vendor
+            innerdict['device_type'] = device_type
+            network_devices[hostname] = innerdict
+        i += 1
 
 if __name__ == '__main__':
-	main()
-
+    main()

@@ -4,7 +4,7 @@ def main():
 	prompt = True
 	while prompt == True:
 		ipadd = raw_input("Please enter an ip address: ")
-	
+
 		try:
 			if ipadd.count('.') != 3:
 				invalid = True
@@ -20,7 +20,7 @@ def main():
 			print 'ValueError:  The IP address must contain 4 octets.'
 		except IndexError:
 			print 'IndexError:  The IP address must contain 4 octets.'
-	
+
 		if invalid == True:
 			print 'The IP address must contain 4 octets.'
 		else:
@@ -33,7 +33,7 @@ def main():
 			if first == 169 and second == 254:
 				print 'The IP address cannot be in the 169.254.X.X address space.'
 				invalid = True
-			if (second not in range(0,256)) or (third not in range(0,256)) or (fourth not in range(0,256)):
+			if (second not in range(0, 256)) or (third not in range(0, 256)) or (fourth not in range(0, 256)):
 				print 'The last three octets must range between 0-255.'
 				invalid = True
 		if invalid != True:
@@ -43,5 +43,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-

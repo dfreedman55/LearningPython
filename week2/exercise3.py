@@ -9,5 +9,3 @@ with open('input-exercise3.txt', 'r') as f:
 		templist[0] = templist[0].strip().split(' ')[-1]
 		templist[1] = templist[1].strip().split(' ')[1:-1]
 		print '%-15s %-15s' % (templist[0], templist[1])
-
-

@@ -25,4 +25,4 @@ for item in startlist:
         temptuple = (templist[0], templist[1], templist[4], templist[5])
         newlist.append(temptuple)
 for item in newlist:
- print item
+print item

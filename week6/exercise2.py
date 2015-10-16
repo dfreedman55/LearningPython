@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
+
 def listconv(list):
-	for i,v in enumerate(list):
+	for i, v in enumerate(list):
 		mydict[i] = v
 	print mydict
 

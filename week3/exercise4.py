@@ -22,16 +22,16 @@ def main():
 	if invalid == True:
 		print 'The IP address must contain 4 octets.'
 	else:
-		if first not in range(1,224):
+		if first not in range(1, 224):
 			print 'The first octet must be between 1-223.'
-			invalid = True
-		if first == 127:
-			print 'The first octet cannot be 127.'
-			invalid = True
+		if invalid = True:
+			if first == 127:
+				print 'The first octet cannot be 127.'
+				invalid = True
 		if first == 169 and second == 254:
 			print 'The IP address cannot be in the 169.254.X.X address space.'
 			invalid = True
-		if (second not in range(0,256)) or (third not in range(0,256)) or (fourth not in range(0,256)):
+		if (second not in range(0, 256)) or (third not in range(0, 256)) or (fourth not in range(0, 256)):
 			print 'The last three octets must range between 0-255.'
 			invalid = True
 		if invalid != True:
@@ -39,5 +39,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-

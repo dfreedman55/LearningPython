@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+
 def main():
 	show_version = '''
+
 Cisco IOS Software, C880 Software (C880DATA-UNIVERSALK9-M), Version 15.0(1)M4, RELEASE SOFTWARE (fc1)
 Technical Support:
 Copyright (c) 1986-2010 by Cisco Systems, Inc.
@@ -36,27 +38,27 @@ License Information for 'c880-data'
 
 Configuration register is 0x2102'''
 
-	startlist = show_version.strip().split('\n')
-	mydictionary = {}	
-	for item in startlist:
-		if 'Cisco IOS Software' in item:
-			vendor = item.split(' ')[0]
-			os_version = item.split(',')[2].split(' ')[-1]
-			mydictionary['vendor'] = vendor
-			mydictionary['os_version'] = os_version
-		if 'bytes of memory' in item:
-			model = item.split('(')[0].strip()
-			mydictionary['model'] = model
-		if 'Processor board ID' in item:
-			serial_number = item.split(' ')[-1]
-			mydictionary['serial_number'] = serial_number
-		if 'uptime is' in item:
-			uptime = item.split('uptime is')[-1].strip()
-			mydictionary['uptime'] = uptime
+startlist = show_version.strip().split('\n')
+mydictionary = {}
+for item in startlist:
+	if 'Cisco IOS Software' in item:
+		vendor = item.split(' ')[0]
+		os_version = item.split(',')[2].split(' ')[-1]
+		mydictionary['vendor'] = vendor
+		mydictionary['os_version'] = os_version
+	if 'bytes of memory' in item:
+		model = item.split('(')[0].strip()
+		mydictionary['model'] = model
+	if 'Processor board ID' in item:
+		serial_number = item.split(' ')[-1]
+		mydictionary['serial_number'] = serial_number
+	if 'uptime is' in item:
+		uptime = item.split('uptime is')[-1].strip()
+		mydictionary['uptime'] = uptime
 
-	print mydictionary
-	for k,v in mydictionary.items():
-		print k, v
+print mydictionary
+for k, v in mydictionary.items():
+	print k, v
 
 if __name__ == '__main__':
 	main()
